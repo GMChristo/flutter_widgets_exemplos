@@ -9,6 +9,7 @@ import 'package:widgets_exemplo/pages/media_query/media_query_page.dart';
 import 'package:widgets_exemplo/pages/rows_columns/rows_column_page.dart';
 import 'package:widgets_exemplo/pages/scrolls/listview_page.dart';
 import 'package:widgets_exemplo/pages/scrolls/singlechildscrollciew_page.dart';
+import 'package:widgets_exemplo/pages/snackbar/snackbar_page.dart';
 
 void main() {
   runApp(
@@ -29,8 +30,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Widgets Example',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primaryColor: Colors.amber,
+        primarySwatch: Colors.blue,
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // useMaterial3: true,
       ),
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
@@ -44,6 +47,7 @@ class MyApp extends StatelessWidget {
         '/scrolls/single_child': (_) => const SinglechildscrollciewPage(),
         '/scrolls/list_view': (_) => const ListviewPage(),
         '/dialogs': (_) => const DialogsPage(),
+        '/snackBars': (_) => const SnackbarPage(),
       },
     );
   }
