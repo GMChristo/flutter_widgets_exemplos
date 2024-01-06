@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:widgets_exemplo/pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
+import 'package:widgets_exemplo/pages/cidades/cidades_page.dart';
 import 'package:widgets_exemplo/pages/container/container_page.dart';
 import 'package:widgets_exemplo/pages/dialogs/dialogs_page.dart';
 import 'package:widgets_exemplo/pages/forms/forms_page.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         '/dialogs': (_) => const DialogsPage(),
         '/snackBars': (_) => const SnackbarPage(),
         '/forms': (_) => const FormsPage(),
+        '/cidades': (_) => const CidadesPage(),
       },
     );
   }
