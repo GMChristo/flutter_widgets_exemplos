@@ -18,6 +18,8 @@ enum PopupMenuPages {
   dialogs,
   // ignore: constant_identifier_names
   snackBars,
+  // ignore: constant_identifier_names
+  forms,
 }
 
 class HomePage extends StatelessWidget {
@@ -59,6 +61,9 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.snackBars:
                   Navigator.of(context).pushNamed('/snackBars');
                   break;
+                case PopupMenuPages.forms:
+                  Navigator.of(context).pushNamed('/forms');
+                  break;
               }
             },
             itemBuilder: (BuildContext context) {
@@ -98,6 +103,10 @@ class HomePage extends StatelessWidget {
                 const PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.snackBars,
                   child: Text('SnackBars'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.forms,
+                  child: Text('Forms'),
                 ),
               ];
             },
