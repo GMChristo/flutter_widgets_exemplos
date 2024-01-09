@@ -12,6 +12,8 @@ import 'package:widgets_exemplo/pages/rows_columns/rows_column_page.dart';
 import 'package:widgets_exemplo/pages/scrolls/listview_page.dart';
 import 'package:widgets_exemplo/pages/scrolls/singlechildscrollciew_page.dart';
 import 'package:widgets_exemplo/pages/snackbar/snackbar_page.dart';
+import 'package:widgets_exemplo/pages/stack/stack_page.dart';
+import 'package:widgets_exemplo/pages/stack/stack_page2.dart';
 
 void main() {
   runApp(
@@ -52,6 +54,8 @@ class MyApp extends StatelessWidget {
         '/snackBars': (_) => const SnackbarPage(),
         '/forms': (_) => const FormsPage(),
         '/cidades': (_) => const CidadesPage(),
+        '/stack': (_) => const StackPage(),
+        '/stack/page2': (_) => const StackPage2(),
       },
     );
   }
