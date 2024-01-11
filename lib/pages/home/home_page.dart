@@ -32,6 +32,8 @@ enum PopupMenuPages {
   circleAvatar,
   // ignore: constant_identifier_names
   colors,
+  // ignore: constant_identifier_names
+  materialBanner,
 }
 
 class HomePage extends StatelessWidget {
@@ -93,6 +95,9 @@ class HomePage extends StatelessWidget {
                   break;
                 case PopupMenuPages.colors:
                   Navigator.of(context).pushNamed('/colors');
+                  break;
+                case PopupMenuPages.materialBanner:
+                  Navigator.of(context).pushNamed('/materialBanner');
                   break;
               }
             },
@@ -161,6 +166,10 @@ class HomePage extends StatelessWidget {
                 const PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.colors,
                   child: Text('Colors'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.materialBanner,
+                  child: Text('Material Banner'),
                 ),
               ];
             },

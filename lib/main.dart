@@ -10,6 +10,7 @@ import 'package:widgets_exemplo/pages/dialogs/dialogs_page.dart';
 import 'package:widgets_exemplo/pages/forms/forms_page.dart';
 import 'package:widgets_exemplo/pages/home/home_page.dart';
 import 'package:widgets_exemplo/pages/layout_builder/layout_builder_page.dart';
+import 'package:widgets_exemplo/pages/material_banner/material_banner_page.dart';
 import 'package:widgets_exemplo/pages/media_query/media_query_page.dart';
 import 'package:widgets_exemplo/pages/rows_columns/rows_column_page.dart';
 import 'package:widgets_exemplo/pages/scrolls/listview_page.dart';
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
         '/bottomNavigationBar': (_) => const BottomNavigatorBarPage(),
         '/circleAvatar': (_) => const CircleAvatarPage(),
         '/colors': (_) => const ColorsPage(),
+        '/materialBanner': (_) => const MaterialBannerPage(),
       },
     );
   }
