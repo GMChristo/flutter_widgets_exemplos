@@ -26,6 +26,10 @@ enum PopupMenuPages {
   stack,
   // ignore: constant_identifier_names
   stack2,
+  // ignore: constant_identifier_names
+  bottomNavigationBar,
+  // ignore: constant_identifier_names
+  circleAvatar,
 }
 
 class HomePage extends StatelessWidget {
@@ -78,6 +82,12 @@ class HomePage extends StatelessWidget {
                   break;
                 case PopupMenuPages.stack2:
                   Navigator.of(context).pushNamed('/stack/page2');
+                  break;
+                case PopupMenuPages.bottomNavigationBar:
+                  Navigator.of(context).pushNamed('/bottomNavigationBar');
+                  break;
+                case PopupMenuPages.circleAvatar:
+                  Navigator.of(context).pushNamed('/circleAvatar');
                   break;
               }
             },
@@ -134,6 +144,14 @@ class HomePage extends StatelessWidget {
                 const PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.stack2,
                   child: Text('Stack2'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.bottomNavigationBar,
+                  child: Text('BottomNavigationBar'),
+                ),
+                const PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.circleAvatar,
+                  child: Text('CircleAvatar'),
                 ),
               ];
             },
